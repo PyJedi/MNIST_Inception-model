@@ -219,7 +219,7 @@ use_previous = 0
  
 #use the previous model or don't and initialize variables
 if use_previous:
-    saver.restore(sess,file_path)
+    saver.restore(sess,'gs://cmb/mnist/mnist.ckpt')
     print("Model restored.")
  
 #training
